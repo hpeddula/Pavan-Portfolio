@@ -1,0 +1,15 @@
+$name-size:3em;
+$video-size:20em;
+.name {
+    font-size: $name-size;
+    margin-top: 1em;
+}
+.video-container {
+    text-align: center;
+    margin-top: 3em;
+}
+.video {
+    height: $video-size;
+    width: 70%;
+    border-radius: 7px;
+}

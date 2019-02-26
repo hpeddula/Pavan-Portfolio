@@ -1,0 +1,13 @@
+$primary-color:#fff;
+$background-color:#1F2024;
+$opacity:0.7;
+
+body{
+    background-color: $background-color;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
