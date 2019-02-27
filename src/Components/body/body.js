@@ -16,7 +16,7 @@ export default class Body extends Component {
     render() {
         const { games } = this.state;
         return (
-            <div>
+            <div className="game-wrapper">
                 {
                     games.map((game, index) => (
                         <div class="card" style={{width:'18rem'}}>
