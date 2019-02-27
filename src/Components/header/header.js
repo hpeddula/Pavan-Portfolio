@@ -1,5 +1,7 @@
 import React from 'react'
 import './header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 export default function Header() {
     return (
         <React.Fragment>
@@ -8,7 +10,8 @@ export default function Header() {
             </div>
             <div className="text-center">
                 <h1 className="name">Pavan Tummala</h1>
-                <strong><code>Game Programming Portfolio</code></strong>
+                <FontAwesomeIcon icon={faGamepad} color="white" size="2x" /> 
+                <p><code>Game Programming Portfolio</code></p>
             </div>
         </React.Fragment>
     )
