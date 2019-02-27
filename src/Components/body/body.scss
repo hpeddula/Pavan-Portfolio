@@ -1,3 +1,9 @@
 .game-wrapper {
-    
+    margin-top: 2em;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+}
+.box {
+    border:1px solid white;
 }
