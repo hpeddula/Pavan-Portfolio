@@ -1,1 +1,1 @@
-Portfolio Project buit using React.
+Portfolio Project built using React.
