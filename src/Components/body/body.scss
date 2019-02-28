@@ -1,9 +1,15 @@
 .game-wrapper {
-    margin-top: 2em;
+    margin: 1.5em;
     display: flex;
     // flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 75vh;
 }
 .box {
-    border:1px solid white;
+    width: 3em;
+    height: auto;
+    border: 1px solid red;
+}
+.game-heading {
+    padding: .5em;
 }

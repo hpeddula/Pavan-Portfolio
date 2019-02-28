@@ -13,30 +13,23 @@ export default class Body extends Component {
     render() {
         return (
             <React.Fragment>
+                <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
-                    <div className="card">
-                        <div className="card-body">
-                            <p className="card-text">This is some text within a card body.</p>
-                        </div>
+                    <div className="box">
+                        <p className="card-text">This is some text within a card body.</p>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <p className="card-text">This is some text within a card body.</p>
-                        </div>
+                    <div className="box">
+                        <p className="card-text">This is some text within a card body.</p>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <p className="card-text">This is some text within a card body.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-body">
+                    <div className="box">
                         <p className="card-text">This is some text within a card body.</p>
                     </div>
                 </div>
-                <div className="card">
-                    <div className="card-body">
+                <div className="game-wrapper">
+                    <div className="box">
+                        <p className="card-text">This is some text within a card body.</p>
+                    </div>
+                    <div className="box">
                         <p className="card-text">This is some text within a card body.</p>
                     </div>
                 </div>

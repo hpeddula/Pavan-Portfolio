@@ -21,3 +21,7 @@ $video-size:30em;
 .gamePad {
     margin-right: .5em;
 }
+.gamePad:hover{
+    cursor: pointer;
+    color: rgb(223, 175, 64);
+}
