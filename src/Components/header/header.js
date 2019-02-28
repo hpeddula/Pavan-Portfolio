@@ -9,7 +9,7 @@ export default class Header extends Component {
         this.scrollIntoView = this.scrollIntoView.bind(this);
     }
     scrollIntoView() {
-        let ele = document.getElementsByClassName('game-wrapper');
+        let ele = document.getElementsByClassName('box');
         ele[0].scrollIntoView({behavior: "smooth", block: "end"});
     }
     render() {

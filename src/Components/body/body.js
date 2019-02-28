@@ -16,7 +16,7 @@ export default class Body extends Component {
                 <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
                     <div className="box">
-                        <p className="card-text">This is some text within a card body.</p>
+                    {/* <img class="irc_mi" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png"/> */}
                     </div>
                     <div className="box">
                         <p className="card-text">This is some text within a card body.</p>
@@ -24,8 +24,6 @@ export default class Body extends Component {
                     <div className="box">
                         <p className="card-text">This is some text within a card body.</p>
                     </div>
-                </div>
-                <div className="game-wrapper">
                     <div className="box">
                         <p className="card-text">This is some text within a card body.</p>
                     </div>
