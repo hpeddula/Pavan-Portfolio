@@ -11,9 +11,19 @@
     height: 25em;
     border: 1px solid red;
     margin: 2em;
-    padding:1em;
+    // padding:1em;
+}
+.box :hover {
+    cursor: pointer;
 }
 .game-heading {
     margin-top: 2em;
     margin-bottom: 0em;
+}
+.game-image {
+    width: 25em;
+    height: 25em;
+    object-fit: cover;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
 }
