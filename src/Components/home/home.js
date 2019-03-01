@@ -8,10 +8,15 @@ export default class Home extends Component {
     constructor(props) {
         super(props);
         this.navigateToGame1 = this.navigateToGame1.bind(this);
+        this.scrollIntoView = this.scrollIntoView.bind(this);
     }
     navigateToGame1() {
         const { history } = this.props;
         history.push("/game1");
+    }
+    scrollIntoView() {
+        let ele = document.getElementsByClassName('box');
+        ele[0].scrollIntoView({behavior: "smooth", block: "end"});
     }
     render() {
         const { history, location } = this.props;
