@@ -7,8 +7,13 @@ import { faGamepad, faKeyboard } from '@fortawesome/free-solid-svg-icons';
 export default class Home extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            isHovering: false
+        }
         this.navigateToGame1 = this.navigateToGame1.bind(this);
         this.scrollIntoView = this.scrollIntoView.bind(this);
+        this.handleMouseHover = this.handleMouseHover.bind(this);
+        this.handleMouseHover1 = this.handleMouseHover1.bind(this);
     }
     navigateToGame1() {
         const { history } = this.props;
@@ -16,11 +21,25 @@ export default class Home extends Component {
     }
     scrollIntoView() {
         let ele = document.getElementsByClassName('box');
-        ele[0].scrollIntoView({behavior: "smooth", block: "end"});
+        ele[0].scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+    handleMouseHover(e) {
+        console.log('Event',e.target);
+        this.setState(this.toggleHoverState);
+    }
+    handleMouseHover1(e) {
+        console.log('Event',e.target);
+        this.setState(this.toggleHoverState);
+    }
+    toggleHoverState(state) {
+        return {
+            isHovering: !state.isHovering,
+        };
     }
     render() {
-        const { history, location } = this.props;
-        console.log('Props', history);
+        const { isHovering } = this.state;
+        const game1 = !isHovering?<img className="game-image" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" onClick={this.navigateToGame1} />:<h2>Game1 Description</h2>;
+        const game2 = !isHovering?<img className="game-image" src="https://www.keengamer.com/Image/Image/69712?Size=STANDARD" />:<h2>Game2 Description</h2>;
         return (
             <React.Fragment>
                 <div className="text-center" ref={node => this.parentNode = node}>
@@ -36,11 +55,17 @@ export default class Home extends Component {
                 </div>
                 <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
-                    <div className="box">
-                        <img className="game-image" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" onClick={this.navigateToGame1} />
+                    <div className="box"
+                        onMouseEnter={this.handleMouseHover}
+                        onMouseLeave={this.handleMouseHover}
+                    >
+                    {game1}
                     </div>
-                    <div className="box">
-                        <img className="game-image" src="https://www.keengamer.com/Image/Image/69712?Size=STANDARD" />
+                    <div className="box"
+                        onMouseEnter={this.handleMouseHover1}
+                        onMouseLeave={this.handleMouseHover1}
+                    >
+                    {game2}    
                     </div>
                     <div className="box">
                         <img className="game-image" src="http://i.imgur.com/pgcqPXG.jpg" />
