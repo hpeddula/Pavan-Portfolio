@@ -73,11 +73,11 @@ export default class Home extends Component {
                 <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
                     <div className="box"
-                        onMouseEnter={this.handleMouseHover}
-                        onMouseLeave={this.handleMouseHover}
+                        // onMouseEnter={this.handleMouseHover}
+                        // onMouseLeave={this.handleMouseHover}
                         onClick={this.navigateToGame1}
                     >
-                        {game1}
+                        <img className="game-image" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" />
                     </div>
                     <div className="box"
                         onMouseEnter={this.handleMouseHover1}

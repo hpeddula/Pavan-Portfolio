@@ -27,3 +27,9 @@
     // background-repeat: no-repeat;
     // background-position: 50% 50%;
 }
+img.game-image:hover {
+    content: ''
+}
+.game-image::after {
+    content: 'Game1 Description';
+}
