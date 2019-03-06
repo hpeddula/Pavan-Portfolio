@@ -4,7 +4,13 @@ export default class Game1 extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1>This is game1</h1>
+        
+
+        <div className="aaa">
+          <div className="bbb">
+          <h1>This is game1</h1>
+          </div>
+        </div>
       </div>
     )
   }
