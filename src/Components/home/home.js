@@ -34,26 +34,36 @@ export default class Home extends Component {
                 </div>
                 <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
-                    <div className="box" onClick={this.navigateToGame1}>
-                        <img className="game-image" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" />
-                        <p>Game 1 Description</p>
-                    </div>
-                    <div className="box">
-                        <img className="game-image" src="https://www.keengamer.com/Image/Image/69712?Size=STANDARD" /> 
-                        <p>Game 2 Description</p>
-                    </div>
-                    <div className="box">
-                        <img className="game-image" src="http://i.imgur.com/pgcqPXG.jpg" />
-                        <p>Game 3 Description</p>
-                    </div>
-                    <div className="box">
-                        <img className="game-image" src="https://images.g2a.com/newlayout/600x351/1x1x0/b0b35a4316e8/5a4f67e45bafe35fa63db642" />
-                        <p>Game 4 Description</p>
-                    </div>
-                    <div className="box">
-                        <img className="game-image" src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcOMCnvWKiOBBiiRl0irczQcXPqc58S3kBb_NdMRPibELaRmI97RknkDcd5_qy.gG8oS1vL3dr3QDP.IAAUKMh_KgFEQJefJwOVfs69M7u3YvZnHGXU9.ZHZRNIATZ2U8zXfuVwHM2h32czWU1KA.wsuKLGpHcAlSwNQgyzKOAQQs-&amp;h=1080&amp;w=1920&amp;format=jpg" />
-                        <p>Game 5 Description</p>
-                    </div>
+                    <a href="/game1">
+                        <div className="box" onClick={this.navigateToGame1}>
+                            <img className="game-image" alt="Game1" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" />
+                            <p>Game 1 Description</p>
+                        </div>
+                    </a>
+                    <a href="/game2">
+                        <div className="box">
+                            <img className="game-image" alt="Game2" src="https://www.keengamer.com/Image/Image/69712?Size=STANDARD" />
+                            <p>Game 2 Description</p>
+                        </div>
+                    </a>
+                    <a href="/game3">
+                        <div className="box">
+                            <img className="game-image" alt="Game3" src="http://i.imgur.com/pgcqPXG.jpg" />
+                            <p>Game 3 Description</p>
+                        </div>
+                    </a>
+                    <a href="/game4">
+                        <div className="box">
+                            <img className="game-image" alt="Game4" src="https://images.g2a.com/newlayout/600x351/1x1x0/b0b35a4316e8/5a4f67e45bafe35fa63db642" />
+                            <p>Game 4 Description</p>
+                        </div>
+                    </a>
+                    <a href="/game5">
+                        <div className="box">
+                            <img className="game-image" alt="Game5" src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcOMCnvWKiOBBiiRl0irczQcXPqc58S3kBb_NdMRPibELaRmI97RknkDcd5_qy.gG8oS1vL3dr3QDP.IAAUKMh_KgFEQJefJwOVfs69M7u3YvZnHGXU9.ZHZRNIATZ2U8zXfuVwHM2h32czWU1KA.wsuKLGpHcAlSwNQgyzKOAQQs-&amp;h=1080&amp;w=1920&amp;format=jpg" />
+                            <p>Game 5 Description</p>
+                        </div>
+                    </a>
                 </div>
             </React.Fragment>
         )
