@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import './home.scss';
 import '../header/header.scss';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad, faKeyboard } from '@fortawesome/free-solid-svg-icons';
 export default class Home extends Component {
