@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import './home.scss';
 import '../header/header.scss';
 import { Link } from 'react-router-dom';
@@ -7,12 +8,30 @@ import { faGamepad, faKeyboard } from '@fortawesome/free-solid-svg-icons';
 export default class Home extends Component {
     constructor(props) {
         super(props);
-        this.navigateToGame1 = this.navigateToGame1.bind(this);
+        this.navigateToGame = this.navigateToGame.bind(this);
         this.scrollIntoView = this.scrollIntoView.bind(this);
     }
-    navigateToGame1() {
+    navigateToGame(name) {
         const { history } = this.props;
-        history.push("/game1");
+        switch (name) {
+            case 'game1':
+                history.push('/game1');
+                break;
+            case 'game2':
+                history.push('/game2');
+                break;
+            case 'game3':
+                history.push('/game3');
+                break;
+            case 'game4':
+                history.push('/game4');
+                break;
+            case 'game5':
+                history.push('/game5');
+                break;
+            default:
+                break;
+        }
     }
     scrollIntoView() {
         let ele = document.getElementsByClassName('box');
@@ -35,37 +54,63 @@ export default class Home extends Component {
                 <h2 className="text-center game-heading">Games</h2>
                 <div className="game-wrapper">
                     <a href="/game1">
-                        <div className="box" onClick={this.navigateToGame1}>
-                            <img className="game-image" alt="Game1" src="https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/full/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png" />
-                            <p>Game 1 Description</p>
+                        <div className="box">
+                            <img className="game-image" alt="Game1" src={require('../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png')} />
+                            <div className="game-description">
+                                <h2>Game1 Title</h2>
+                                <p>Game1 Description</p>
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('game1')}>View Project</button>
+                            </div>
                         </div>
                     </a>
                     <a href="/game2">
                         <div className="box">
-                            <img className="game-image" alt="Game2" src="https://www.keengamer.com/Image/Image/69712?Size=STANDARD" />
-                            <p>Game 2 Description</p>
+                            <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
+                            <div className="game-description">
+                                <h2>Game2 Title</h2>
+                                <p>Game2 Description</p>
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('game2')}>View Project</button>
+                            </div>
                         </div>
                     </a>
                     <a href="/game3">
                         <div className="box">
-                            <img className="game-image" alt="Game3" src="http://i.imgur.com/pgcqPXG.jpg" />
-                            <p>Game 3 Description</p>
+                            <img className="game-image" alt="Game3" src={require('../../Assets/images/pgcqPXG.jpg')} />
+                            <div className="game-description">
+                                <h2>Game3 Title</h2>
+                                <p>Game3 Description</p>
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('game3')}>View Project</button>
+                            </div>
                         </div>
                     </a>
                     <a href="/game4">
                         <div className="box">
-                            <img className="game-image" alt="Game4" src="https://images.g2a.com/newlayout/600x351/1x1x0/b0b35a4316e8/5a4f67e45bafe35fa63db642" />
-                            <p>Game 4 Description</p>
+                            <img className="game-image" alt="Game4" src={require('../../Assets/images/5a4f67e45bafe35fa63db642.jpeg')} />
+                            <div className="game-description">
+                                <h2>Game4 Title</h2>
+                                <p>Game4 Description</p>
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('game4')}>View Project</button>
+                            </div>
                         </div>
                     </a>
                     <a href="/game5">
                         <div className="box">
-                            <img className="game-image" alt="Game5" src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcOMCnvWKiOBBiiRl0irczQcXPqc58S3kBb_NdMRPibELaRmI97RknkDcd5_qy.gG8oS1vL3dr3QDP.IAAUKMh_KgFEQJefJwOVfs69M7u3YvZnHGXU9.ZHZRNIATZ2U8zXfuVwHM2h32czWU1KA.wsuKLGpHcAlSwNQgyzKOAQQs-&amp;h=1080&amp;w=1920&amp;format=jpg" />
-                            <p>Game 5 Description</p>
+                            <img className="game-image" alt="Game5" src={require('../../Assets/images/image.jpeg')} />
+                            <div className="game-description">
+                                <h2>Game5 Title</h2>
+                                <p>Game5 Description</p>
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('game5')}>View Project</button>
+                            </div>
                         </div>
                     </a>
                 </div>
             </React.Fragment>
         )
     }
+}
+Home.propTypes = {
+    navigateToGame:PropTypes.func,
+    scrollIntoView:PropTypes.func,
+    listen:PropTypes.func,
+    history:PropTypes.object
 }

@@ -5,8 +5,8 @@ import game2 from '../games/game2';
 import game3 from '../games/game3';
 import game4 from '../games/game4';
 import game5 from '../games/game5';
-import { Switch,Router,Route } from 'react-router-dom';
-export default function body() {
+import { Switch,Router,Route,withRouter } from 'react-router-dom';
+function body() {
   return (
     <Switch>
         <Route exact path="/" component={Home}/>
@@ -18,3 +18,4 @@ export default function body() {
     </Switch>
   )
 }
+export default withRouter(body);
