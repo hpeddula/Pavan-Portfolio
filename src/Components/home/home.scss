@@ -16,13 +16,13 @@
 .box {
     width: 25em;
     height: 25em;
-    border: 1px solid red;
     margin: 2em;
     position: relative;
     // padding:1em;
 }
 .box:hover{
     cursor: pointer;
+    border: 1px solid red;
 }
 .box:hover img{  display: none }
 // .box:hover::after{
@@ -59,13 +59,13 @@
 .other {
     width: 25em;
     height: 25em;
-    border: 1px solid red;
     margin: 2em;
     position: relative;
     // padding:1em;
 }
 .other:hover{
     cursor: pointer;
+    border: 1px solid red;
 }
 .other:hover img{  display: none }
 .game-heading {
@@ -93,7 +93,7 @@
 .games-title {
     display: flex;
     justify-content: center;
-    margin: 2em;
+    margin-top: 3em;
 }
 .games-title-gamepad {
     margin-right: .5em;
