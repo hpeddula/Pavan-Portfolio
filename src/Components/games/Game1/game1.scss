@@ -5,7 +5,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    height: 100vh;
+    height: auto;
 }
 .game-image {
     width: 25em;
@@ -17,7 +17,6 @@
 .aaa{ width:100vw; height: 100vh;  background:red ; display:table; text-align: center}
 .bbb{ width:100vw; height: 100vh; display: table-cell; vertical-align:middle }
 .gallery {
-    position: absolute;
-    left:50%;
-    top:0;
+   height: 20em;
+   width: 20em;
 }
