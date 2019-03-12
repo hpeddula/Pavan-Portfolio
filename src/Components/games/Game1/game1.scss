@@ -1,22 +1,9 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    height: auto;
-}
-.game-image {
-    width: 25em;
-    height: 25em;
-    object-fit: cover;
-    // background-repeat: no-repeat;
-    // background-position: 50% 50%;
-}
 .aaa{ width:100vw; height: 100vh;  background:red ; display:table; text-align: center}
 .bbb{ width:100vw; height: 100vh; display: table-cell; vertical-align:middle }
+.img-text-container {
+    margin:.5em;
+}
 .gallery {
-   height: 20em;
-   width: 20em;
+    margin: 16px;
 }
