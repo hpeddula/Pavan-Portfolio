@@ -1,9 +1,20 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 .aaa{ width:100vw; height: 100vh;  background:red ; display:table; text-align: center}
 .bbb{ width:100vw; height: 100vh; display: table-cell; vertical-align:middle }
+.container-fluid {
+    height: 100vh;
+}
 .img-text-container {
     margin:.5em;
+    height: auto;
 }
 .gallery {
-    margin: 16px;
+    width: calc(100% - 2em);
+}
+.game-image {
+    width: 25em;
+    height: 25em;
+    object-fit: cover;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
 }

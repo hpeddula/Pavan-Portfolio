@@ -23,7 +23,10 @@ export default class Game1 extends Component {
       }
     ]
     return (
-      <div className="container-fluid">
+      <React.Fragment>
+        <div className="breadcrumb">
+          <a href="/" className="breadcrumb-item active">Home</a>
+        </div>
         <div className="img-text-container">
           <div className="row">
             <div className="col-6">
@@ -41,13 +44,13 @@ export default class Game1 extends Component {
               </p>
             </div>
             <div className="col-6">
-              {/* <div className="gallery"> */}
-              <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} />
-              {/* </div> */}
+              <div className="gallery">
+                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
