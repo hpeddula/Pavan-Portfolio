@@ -4,15 +4,14 @@
     flex-direction: row;
     justify-content: center;
     height: 100%;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
-.game-wrapper>a {
-    flex : 0  34%;
-}
+    // .game-wrapper>div.box>a {
+    //     flex : 0  29%;
+    // }
 .box {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
     margin: 2em;
     position: relative;
     // padding:1em;
@@ -54,8 +53,8 @@
 
 
 .other {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
     margin: 2em;
     position: relative;
     // padding:1em;
@@ -81,8 +80,8 @@
      display: none;
  }
 .game-image {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
     object-fit: cover;
     // background-repeat: no-repeat;
     // background-position: 50% 50%;

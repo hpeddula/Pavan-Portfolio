@@ -9,3 +9,32 @@
  .git {
      cursor: pointer;
  }
+ .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+ }
+ .modal-button {
+     background: rgb(105, 104, 100);
+     color: #fff;
+ }
+ .modal-header {
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+     background: #1e2427;
+     color: #fff;
+ }
+ .modal-body {
+    background: #1e2427;
+    color: #fff;
+ }
+ .modal-footer {
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+     background: #1e2427;
+     color: #fff;
+ }
+ button.close {
+    background: #1e2427;
+    color: #fff;
+ }
