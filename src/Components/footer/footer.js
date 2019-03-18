@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
     this.state = {
       modal: false,
       email: '',
-      mobile: '',
+      message: '',
       name: ''
     }
     this.toggle = this.toggle.bind(this);
@@ -25,11 +25,13 @@ export default class Footer extends React.Component {
       case 'Name':
         this.setState({ name: e.target.value });
         break;
-      case 'Mobile':
-        this.setState({ mobile: e.target.value });
+      case 'Message':
+        this.setState({ message: e.target.value });
         break;
       case 'Email':
         this.setState({ email: e.target.value });
+        break;
+        default:
         break;
     }
   }
@@ -54,7 +56,7 @@ export default class Footer extends React.Component {
       .catch(err => console.log(err));
   }
   render() {
-    const { email, mobile, name } = this.state;
+    const { email, message, name } = this.state;
     return (
       <div>
         <div className="contact">
@@ -75,12 +77,12 @@ export default class Footer extends React.Component {
                 <input type="email" className="form-control" defaultValue={name} name="Name" onChange={(e) => this.handleInputChange(e)} id="name" placeholder="Enter Your Name" />
               </div>
               <div className="form-group">
-                <label htmlFor="Mobile">Mobile Number</label>
-                <input type="email" className="form-control" name="Mobile" defaultValue={mobile} onChange={this.handleInputChange} id="Mobile" placeholder="Enter Mobile Number" />
-              </div>
-              <div className="form-group">
                 <label htmlFor="Email">Email address</label>
                 <input type="email" className="form-control" name="Email" defaultValue={email} onChange={this.handleInputChange} id="Email" placeholder="Enter Your Email" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="Message">Message</label>
+                <textarea name="Message" defaultValue={message} onChange={this.handleInputChange} id="Message" placeholder="Enter Your Message" className="message"></textarea>
               </div>
             </form>
           </ModalBody>
