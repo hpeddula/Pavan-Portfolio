@@ -26,8 +26,11 @@ export default class Home extends Component {
             case 'game4':
                 history.push('/game4');
                 break;
-            case 'game5':
-                history.push('/game5');
+            case 'other1':
+                history.push('/other1');
+                break;
+            case 'other2':
+                history.push('/other2');
                 break;
             default:
                 break;
@@ -122,7 +125,7 @@ export default class Home extends Component {
                         <div className="game-description">
                             <h2>Other1 Title</h2>
                             <p>Other1 Description</p>
-                            <button className="btn btn-primary" onClick={() => this.navigateToGame('game1')}>View Project</button>
+                            <button className="btn btn-primary" onClick={() => this.navigateToGame('other1')}>View Project</button>
                         </div>
                     </div>
                 </a>
@@ -132,7 +135,7 @@ export default class Home extends Component {
                         <div className="game-description">
                             <h2>Other2 Title</h2>
                             <p>Other2 Description</p>
-                            <button className="btn btn-primary" onClick={() => this.navigateToGame('game2')}>View Project</button>
+                            <button className="btn btn-primary" onClick={() => this.navigateToGame('other2')}>View Project</button>
                         </div>
                     </div>
                 </a>
