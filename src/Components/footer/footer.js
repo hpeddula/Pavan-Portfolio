@@ -59,14 +59,14 @@ export default class Footer extends React.Component {
     const { email, message, name } = this.state;
     return (
       <div>
-        <div className="contact">
+        {/* <div className="contact">
           <Button className="modal-button" onClick={this.toggle}>Contact Me</Button>
-        </div>
+        </div> */}
         <div className="footer">
           <span><FontAwesomeIcon icon={faCopyright} color="white" /> Pavan Tummala </span>
-          <FontAwesomeIcon icon={faGithub} color="white" className="git" />
+          {/* <FontAwesomeIcon icon={faGithub} color="white" className="git" /> */}
         </div>
-        <Modal isOpen={this.state.modal} toggle={this.toggle}>
+        {/* <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>
             Contact Me
           </ModalHeader>
@@ -90,7 +90,7 @@ export default class Footer extends React.Component {
             <Button color="primary" onClick={this.handleSubmit}>Submit</Button>
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
-        </Modal>
+        </Modal> */}
       </div>
     )
   }
