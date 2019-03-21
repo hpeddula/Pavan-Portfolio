@@ -1,0 +1,10 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    .not-found-box{
+        height: 100%;
+        width: 100%;
+        border: 1px solid blue;
+        margin: 4em 0;
+    }
+}

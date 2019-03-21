@@ -18,7 +18,7 @@
 }
 .box:hover{
     cursor: pointer;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 .box:hover img{  display: none }
 // .box:hover::after{
@@ -61,7 +61,7 @@
 }
 .other:hover{
     cursor: pointer;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 .other:hover img{  display: none }
 .game-heading {

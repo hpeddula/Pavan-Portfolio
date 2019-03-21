@@ -1,18 +1,19 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
-$background-color:#000207;
-$primary-color:blue;
+$background-color:blue;
+$primary-color:#333;
 .aaa{ width:100vw; height: 100vh;  background:red ; display:table; text-align: center}
 .bbb{ width:100vw; height: 100vh; display: table-cell; vertical-align:middle }
-.container-fluid {
-    height: 100vh;
-}
+// .container-fluid {
+//     height: 100vh;
+// }
 .img-text-container {
-    margin:.5em;
+    margin:1em;
+    margin-bottom: 3em;
     height: auto;
 }
-.gallery {
-    width: calc(100% - 2em);
-}
+// .gallery {
+//     width: calc(100% - 2em);
+// }
 .game-image {
     width: 25em;
     height: 25em;
@@ -21,8 +22,22 @@ $primary-color:blue;
     // background-position: 50% 50%;
 }
 .game-breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    font-size: 1.8em;
+    margin-top:.7em;
+    // padding-left: .5em;
+}
+.breadcrumb-item {
     background: $background-color;
     color: $primary-color;
-    margin-top:.7em;
-    padding-left: .5em;
+    // border: 1px solid red;
+    padding: .2em;
+    border-radius: 10px;
+}
+.breadcrumb-item:hover{
+    text-decoration: none;
+    color: $primary-color;
+    opacity: .9;
 }

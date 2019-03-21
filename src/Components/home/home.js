@@ -11,6 +11,9 @@ export default class Home extends Component {
         this.scrollIntoViewGames = this.scrollIntoViewGames.bind(this);
         this.scrollIntoViewOther = this.scrollIntoViewOther.bind(this);
     }
+    componentDidMount() {
+        document.title ="Pavan Portfolio";
+    }
     navigateToGame(name) {
         const { history } = this.props;
         switch (name) {

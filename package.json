@@ -9,6 +9,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
@@ -19,11 +20,13 @@
     "react-scripts": "2.1.5",
     "reactstrap": "^7.1.0"
   },
+  "homepage": "https://hpeddula.github.io/Pavan-Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
