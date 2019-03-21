@@ -15,22 +15,22 @@ export default class Home extends Component {
         const { history } = this.props;
         switch (name) {
             case 'game1':
-                history.push('/game1');
+                window.location.replace('/game1');
                 break;
             case 'game2':
-                history.push('/game2');
+                window.location.replace('/game2');
                 break;
             case 'game3':
-                history.push('/game3');
+                window.location.replace('/game3');
                 break;
             case 'game4':
-                history.push('/game4');
+                window.location.replace('/game4');
                 break;
             case 'other1':
-                history.push('/other1');
+                window.location.replace('/other1');
                 break;
             case 'other2':
-                history.push('/other2');
+                window.location.replace('/other2');
                 break;
             default:
                 break;

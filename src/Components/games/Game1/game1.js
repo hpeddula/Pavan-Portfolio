@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './game1.scss';
 import ImageGallery from 'react-image-gallery';
-import $ from 'jquery';
+import { Link  } from 'react-router-dom';
 export default class Game1 extends Component {
   componentDidMount() {
     document.title = "Game1";
-    // $('.carousel').carousel('cycle');
   }
   render() {
     const images = [
@@ -24,8 +23,8 @@ export default class Game1 extends Component {
     ]
     return (
       <React.Fragment>
-        <div className="breadcrumb">
-          <a href="/" className="breadcrumb-item active">Home</a>
+        <div className="game-breadcrumb">
+          <Link to="/">Home</Link>
         </div>
         <div className="img-text-container">
           <div className="row">
@@ -45,7 +44,7 @@ export default class Game1 extends Component {
             </div>
             <div className="col-6">
               <div className="gallery">
-                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} />
+                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
               </div>
             </div>
           </div>
