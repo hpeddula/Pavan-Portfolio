@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/harshapeddula/Desktop/Pavan Portfolio/portfolio/src/Components/loader/loader.scss"],"names":[],"mappings":"AAAA,cACI,SAAA,CACA,UAAA,CACA,iBAAA,CACA,OAAA,CACA,QAAS","file":"main.336e0714.chunk.css","sourcesContent":[".spinner-size {\n    width: 6em;\n    height: 6em;\n    position: absolute;\n    top: 50%;\n    left: 45%;\n}"]}
