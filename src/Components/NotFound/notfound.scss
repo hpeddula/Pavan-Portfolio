@@ -1,10 +1,20 @@
-.not-found-container {
+.not-found-box{
+    width: 100%;
+    margin: 4em 0;
+    margin-top: 5em;
     display: flex;
     justify-content: center;
-    .not-found-box{
-        height: 100%;
-        width: 100%;
-        border: 1px solid blue;
-        margin: 4em 0;
-    }
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.not-found-button {
+    width: 100%;
+    margin: 4em 0;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
