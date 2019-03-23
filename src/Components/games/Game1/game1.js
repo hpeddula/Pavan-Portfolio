@@ -4,21 +4,21 @@ import ImageGallery from 'react-image-gallery';
 import { Link } from 'react-router-dom';
 export default class Game1 extends Component {
   componentDidMount() {
-    document.title = "Game1";
+    document.title = "The Dark Valley";
   }
   render() {
     const images = [
       {
-        original: require('../../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png'),
-        thumbnail: require('../../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png'),
+        original: require('../../../Assets/images/Dark Valley/DarkValley-1.png'),
+        thumbnail: require('../../../Assets/images/Dark Valley/DarkValley-1.png')
       },
       {
-        original: require('../../../Assets/images/pubg.jpeg'),
-        thumbnail: require('../../../Assets/images/pubg.jpeg')
+        original: require('../../../Assets/images/Dark Valley/DarkValley-2.png'),
+        thumbnail: require('../../../Assets/images/Dark Valley/DarkValley-2.png')
       },
       {
-        original: require('../../../Assets/images/pgcqPXG.jpg'),
-        thumbnail: require('../../../Assets/images/pgcqPXG.jpg')
+        original: require('../../../Assets/images/Dark Valley/DarkValley-3.png'),
+        thumbnail: require('../../../Assets/images/Dark Valley/DarkValley-3.png')
       }
     ]
     return (

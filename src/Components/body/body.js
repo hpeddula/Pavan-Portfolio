@@ -13,12 +13,12 @@ export default function body() {
   return (
     <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/game1" component={Game1}/>
-        <Route exact path="/game2" component={Game2}/>
-        <Route exact path="/game3" component={Game3}/>
-        <Route exact path="/game4" component={Game4}/>
-        <Route exact path="/game5" component={Game5}/>
-        <Route exact path="/other1" component={Other1}/>
+        <Route exact path="/the-dark-valley" component={Game1}/>
+        <Route exact path="/gothicvania" component={Game2}/>
+        <Route exact path="/blades-of-time" component={Game3}/>
+        <Route exact path="/gaia" component={Game4}/>
+        {/* <Route exact path="/game5" component={Game5}/> */}
+        <Route exact path="/maze-generation" component={Other1}/>
         <Route exact path="/other2" component={Other2}/>
         <Route path="*" component={NotFound} />
     </Switch>

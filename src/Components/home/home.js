@@ -18,19 +18,19 @@ export default class Home extends Component {
         const { history } = this.props;
         switch (name) {
             case 'game1':
-                window.location.replace('/game1');
+                window.location.replace('/the-dark-valley');
                 break;
             case 'game2':
-                window.location.replace('/game2');
+                window.location.replace('/gothicvania');
                 break;
             case 'game3':
-                window.location.replace('/game3');
+                window.location.replace('/blades-of-time');
                 break;
             case 'game4':
-                window.location.replace('/game4');
+                window.location.replace('/gaia');
                 break;
             case 'other1':
-                window.location.replace('/other1');
+                window.location.replace('/maze-generation');
                 break;
             case 'other2':
                 window.location.replace('/other2');
@@ -66,8 +66,8 @@ export default class Home extends Component {
                 </div>
                 <div className="game-wrapper">
                     <div className="box">
-                        <a href="/game1">
-                            <img className="game-image" alt="Game1" src={require('../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png')} />
+                        <a href="/the-dark-valley">
+                            <img className="game-image" alt="Game1" src={require('../../Assets/images/Dark Valley/DarkValley-1.png')} />
                             <div className="game-description">
                                 <h2>Game1 Title</h2>
                                 <p>Game1 Description</p>
@@ -76,8 +76,8 @@ export default class Home extends Component {
                         </a>
                     </div>
                     <div className="box">
-                        <a href="/game2">
-                            <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
+                        <a href="/gothicvania">
+                            <img className="game-image" alt="Game2" src={require('../../Assets/images/Gothicvania/Gothicvania-1.jpg')} />
                             <div className="game-description">
                                 <h2>Game2 Title</h2>
                                 <p>Game2 Description</p>
@@ -88,8 +88,8 @@ export default class Home extends Component {
                 </div>
                 <div className="game-wrapper">
                     <div className="box">
-                        <a href="/game3">
-                            <img className="game-image" alt="Game3" src={require('../../Assets/images/pgcqPXG.jpg')} />
+                        <a href="/blades-of-time">
+                            <img className="game-image" alt="Game3" src={require('../../Assets/images/Blades of Time/BladesOfTime-1.png')} />
                             <div className="game-description">
                                 <h2>Game3 Title</h2>
                                 <p>Game3 Description</p>
@@ -98,8 +98,8 @@ export default class Home extends Component {
                         </a>
                     </div>
                     <div className="box">
-                        <a href="/game4">
-                            <img className="game-image" alt="Game4" src={require('../../Assets/images/5a4f67e45bafe35fa63db642.jpeg')} />
+                        <a href="/gaia">
+                            <img className="game-image" alt="Game4" src={require('../../Assets/images/Project Gaia/ProjectGaia-1.png')} />
                             <div className="game-description">
                                 <h2>Game4 Title</h2>
                                 <p>Game4 Description</p>
@@ -122,9 +122,9 @@ export default class Home extends Component {
                 <FontAwesomeIcon icon={faWrench} color="white" size="2x" className="games-title-wrench" /> <h2>Others</h2>
             </div>
             <div className="game-wrapper">
-                <a href="/other1">
+                <a href="/maze-generation">
                     <div className="other">
-                        <img className="game-image" alt="Game1" src={require('../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png')} />
+                        <img className="game-image" alt="Game1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
                         <div className="game-description">
                             <h2>Other1 Title</h2>
                             <p>Other1 Description</p>

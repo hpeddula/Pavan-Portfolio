@@ -4,21 +4,21 @@ import ImageGallery from 'react-image-gallery';
 import { Link } from 'react-router-dom';
 export default class Game3 extends Component {
   componentDidMount() {
-    document.title = "Game3";
+    document.title = "BladesOfTime";
   }
   render() {
     const images = [
       {
-        original: require('../../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png'),
-        thumbnail: require('../../../Assets/images/witcher3_en_wallpaper_the_witcher_3_wild_hunt_geralt_with_trophies_2560x1600_1449484679.png'),
+        original: require('../../../Assets/images/Blades of Time/BladesOfTime-1.png'),
+        thumbnail: require('../../../Assets/images/Blades of Time/BladesOfTime-1.png')
       },
       {
-        original: require('../../../Assets/images/pubg.jpeg'),
-        thumbnail: require('../../../Assets/images/pubg.jpeg')
+        original: require('../../../Assets/images/Blades of Time/BladesOfTime-2.png'),
+        thumbnail: require('../../../Assets/images/Blades of Time/BladesOfTime-2.png')
       },
       {
-        original: require('../../../Assets/images/pgcqPXG.jpg'),
-        thumbnail: require('../../../Assets/images/pgcqPXG.jpg')
+        original: require('../../../Assets/images/Blades of Time/BladesOfTime-3.png'),
+        thumbnail: require('../../../Assets/images/Blades of Time/BladesOfTime-3.png')
       }
     ]
     return (
