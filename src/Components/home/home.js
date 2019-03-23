@@ -69,8 +69,8 @@ export default class Home extends Component {
                         <a href="/the-dark-valley">
                             <img className="game-image" alt="Game1" src={require('../../Assets/images/Dark Valley/DarkValley-1.png')} />
                             <div className="game-description">
-                                <h2>Game1 Title</h2>
-                                <p>Game1 Description</p>
+                                <h3>The Dark Valley</h3><br />
+                                {/* <p></p> */}
                                 <button className="btn btn-primary" onClick={() => this.navigateToGame('game1')}>View Project</button>
                             </div>
                         </a>
@@ -79,8 +79,8 @@ export default class Home extends Component {
                         <a href="/gothicvania">
                             <img className="game-image" alt="Game2" src={require('../../Assets/images/Gothicvania/Gothicvania-1.jpg')} />
                             <div className="game-description">
-                                <h2>Game2 Title</h2>
-                                <p>Game2 Description</p>
+                                <h3>Gothicvania</h3><br />
+                                {/* <p></p> */}
                                 <button className="btn btn-primary" onClick={() => this.navigateToGame('game2')}>View Project</button>
                             </div>
                         </a>
@@ -91,8 +91,8 @@ export default class Home extends Component {
                         <a href="/blades-of-time">
                             <img className="game-image" alt="Game3" src={require('../../Assets/images/Blades of Time/BladesOfTime-1.png')} />
                             <div className="game-description">
-                                <h2>Game3 Title</h2>
-                                <p>Game3 Description</p>
+                                <h3>Blades Of Time</h3><br />
+                                {/* <p></p> */}
                                 <button className="btn btn-primary" onClick={() => this.navigateToGame('game3')}>View Project</button>
                             </div>
                         </a>
@@ -101,8 +101,8 @@ export default class Home extends Component {
                         <a href="/gaia">
                             <img className="game-image" alt="Game4" src={require('../../Assets/images/Project Gaia/ProjectGaia-1.png')} />
                             <div className="game-description">
-                                <h2>Game4 Title</h2>
-                                <p>Game4 Description</p>
+                                <h3>Gaia</h3><br />
+                                {/* <p></p> */}
                                 <button className="btn btn-primary" onClick={() => this.navigateToGame('game4')}>View Project</button>
                             </div>
                         </a>
@@ -126,8 +126,8 @@ export default class Home extends Component {
                     <div className="other">
                         <img className="game-image" alt="Game1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
                         <div className="game-description">
-                            <h2>Other1 Title</h2>
-                            <p>Other1 Description</p>
+                            <h2>Maze Generation</h2><br />
+                            {/* <p></p> */}
                             <button className="btn btn-primary" onClick={() => this.navigateToGame('other1')}>View Project</button>
                         </div>
                     </div>
@@ -136,8 +136,8 @@ export default class Home extends Component {
                     <div className="other">
                         <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
                         <div className="game-description">
-                            <h2>Other2 Title</h2>
-                            <p>Other2 Description</p>
+                            <h2>Other2 Title</h2><br />
+                            {/* <p>Other2 Description</p> */}
                             <button className="btn btn-primary" onClick={() => this.navigateToGame('other2')}>View Project</button>
                         </div>
                     </div>
