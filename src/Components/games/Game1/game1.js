@@ -55,19 +55,23 @@ export default class Game1 extends Component {
                 <li>Particle system used in creating spell and environment effects.</li>
                 <li>On screen UI for weapons, quick slot items and stats bars.</li>
               </ul>
+            </div>
+            <div className="col-6">
+              <div className="gallery">
+                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
               <h2>External Assets Used</h2>
-              <p>All external assets used in this game that are listed below are freely available for use in projects.</p>
+              <div>All external assets used in this game that are listed below are freely available for use in projects.</div>
               <ul>
                 <li>Character models and all animations are taken from <a href="https://www.mixamo.com/">Mixamo</a>.</li>
                 <li>House models taken from Medieval Buildings package and Tents from <a href="https://assetstore.unity.com/packages/3d/environments/fantasy/campfire-pack-11256">Campfire pack</a></li>
                 <li>Skybox taken from <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633">Skybox Series</a></li>
                 <li>Weapon models are taken from <a href="https://assetstore.unity.com/packages/3d/props/weapons/medieval-weapon-set-01-97120">Medieval Weapon Set</a></li>
               </ul>
-            </div>
-            <div className="col-6">
-              <div className="gallery">
-                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
-              </div>
             </div>
           </div>
         </div>
