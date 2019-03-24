@@ -24,7 +24,7 @@ $primary-color:#333;
 .game-breadcrumb {
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 1.8em;
     margin-top:.7em;
     // padding-left: .5em;
@@ -40,4 +40,9 @@ $primary-color:#333;
     text-decoration: none;
     color: $primary-color;
     opacity: .9;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }

@@ -58,7 +58,7 @@ export default class Home extends Component {
                 </div>
                 <div className="video-container">
                     <div className="video">
-                        <iframe width="560" height="349" title="Introductory Video" src="https://www.youtube.com/embed/W3DBpti5giI?rel=0&modestbranding=1"></iframe>
+                        <iframe width="560" height="349" title="Introductory Video" src="https://www.youtube.com/embed/erbQxha3SB8?rel=0&modestbranding=1"></iframe>
                     </div>
                 </div>
                 <div className="games-title">

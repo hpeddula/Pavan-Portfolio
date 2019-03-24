@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Header from '../src/Components/header/header';
 import Body from './Components/body/loader';
-import Footer from './Components/footer/loader';
+import Footer from './Components/footer/footer';
 class App extends Component {
   render() {
     return (
