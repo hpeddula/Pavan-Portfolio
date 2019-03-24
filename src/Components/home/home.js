@@ -12,7 +12,7 @@ export default class Home extends Component {
         this.scrollIntoViewOther = this.scrollIntoViewOther.bind(this);
     }
     componentDidMount() {
-        document.title ="Pavan Portfolio";
+        document.title = "Pavan Portfolio";
     }
     navigateToGame(name) {
         const { history } = this.props;
@@ -50,6 +50,24 @@ export default class Home extends Component {
     render() {
         return (
             <React.Fragment>
+                <div className="heading-nav">
+                    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a className="navbar-brand" href="/">Pavan PortFolio</a>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div className="navbar-nav">
+                                <a className="nav-item nav-link" href="/the-dark-valley">The Dark Valley</a>
+                                <a className="nav-item nav-link" href="/gothicvania">Gothicvania</a>
+                                <a className="nav-item nav-link" href="/blades-of-time">Blades Of Time</a>
+                                <a className="nav-item nav-link" href="/gaia">Gaia</a>
+                                <a className="nav-item nav-link" href="/maze-generation">Maze Generation</a>
+                                <a className="nav-item nav-link" href="/other2">Other2</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
                 <div className="text-center" ref={node => this.parentNode = node}>
                     <h1 className="name">Pavan Tummala</h1>
                     <FontAwesomeIcon icon={faGamepad} color="white" size="2x" className="gamePad" onClick={this.scrollIntoViewGames} />
@@ -118,31 +136,31 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </a> */}
-            <div className="games-title">
-                <FontAwesomeIcon icon={faWrench} color="white" size="2x" className="games-title-wrench" /> <h2>Others</h2>
-            </div>
-            <div className="game-wrapper">
-                <a href="/maze-generation">
-                    <div className="other">
-                        <img className="game-image" alt="Game1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
-                        <div className="game-description">
-                            <h2>Maze Generation</h2><br />
-                            {/* <p></p> */}
-                            <button className="btn btn-primary" onClick={() => this.navigateToGame('other1')}>View Project</button>
+                <div className="games-title">
+                    <FontAwesomeIcon icon={faWrench} color="white" size="2x" className="games-title-wrench" /> <h2>Others</h2>
+                </div>
+                <div className="game-wrapper">
+                    <a href="/maze-generation">
+                        <div className="other">
+                            <img className="game-image" alt="Game1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
+                            <div className="game-description">
+                                <h2>Maze Generation</h2><br />
+                                {/* <p></p> */}
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('other1')}>View Project</button>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="/other2">
-                    <div className="other">
-                        <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
-                        <div className="game-description">
-                            <h2>Other2 Title</h2><br />
-                            {/* <p>Other2 Description</p> */}
-                            <button className="btn btn-primary" onClick={() => this.navigateToGame('other2')}>View Project</button>
+                    </a>
+                    <a href="/other2">
+                        <div className="other">
+                            <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
+                            <div className="game-description">
+                                <h2>Other2 Title</h2><br />
+                                {/* <p>Other2 Description</p> */}
+                                <button className="btn btn-primary" onClick={() => this.navigateToGame('other2')}>View Project</button>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             </React.Fragment >
         )
     }

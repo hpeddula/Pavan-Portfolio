@@ -57,15 +57,13 @@ export default class Game1 extends Component {
               </ul>
             </div>
             <div className="col-6">
-              <div className="gallery">
-                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
-              </div>
+              <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
             </div>
           </div>
           <div className="row">
             <div className="col-12">
               <h2>External Assets Used</h2>
-              <div>All external assets used in this game that are listed below are freely available for use in projects.</div>
+              <p>All external assets used in this game that are listed below are freely available for use in projects.</p>
               <ul>
                 <li>Character models and all animations are taken from <a href="https://www.mixamo.com/">Mixamo</a>.</li>
                 <li>House models taken from Medieval Buildings package and Tents from <a href="https://assetstore.unity.com/packages/3d/environments/fantasy/campfire-pack-11256">Campfire pack</a></li>
