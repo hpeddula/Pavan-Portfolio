@@ -19,7 +19,7 @@ export default function body() {
         <Route exact path="/gaia" component={Game4}/>
         {/* <Route exact path="/game5" component={Game5}/> */}
         <Route exact path="/maze-generation" component={Other1}/>
-        <Route exact path="/other2" component={Other2}/>
+        <Route exact path="/rope-physics" component={Other2}/>
         <Route path="*" component={NotFound} />
     </Switch>
   )

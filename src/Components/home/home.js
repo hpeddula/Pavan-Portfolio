@@ -33,7 +33,7 @@ export default class Home extends Component {
                 window.location.replace('/maze-generation');
                 break;
             case 'other2':
-                window.location.replace('/other2');
+                window.location.replace('/rope-physics');
                 break;
             default:
                 break;
@@ -142,7 +142,7 @@ export default class Home extends Component {
                 <div className="game-wrapper">
                     <a href="/maze-generation">
                         <div className="other">
-                            <img className="game-image" alt="Game1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
+                            <img className="game-image" alt="other1" src={require('../../Assets/images/MazeGen/MazeGen.png')} />
                             <div className="game-description">
                                 <h2>Maze Generation</h2><br />
                                 {/* <p></p> */}
@@ -150,11 +150,11 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </a>
-                    <a href="/other2">
+                    <a href="/rope-physics">
                         <div className="other">
-                            <img className="game-image" alt="Game2" src={require('../../Assets/images/pubg.jpeg')} />
+                            <img className="game-image" alt="other2" src={require('../../Assets/images/pubg.jpeg')} />
                             <div className="game-description">
-                                <h2>Other2 Title</h2><br />
+                                <h2>Rope Physics</h2><br />
                                 {/* <p>Other2 Description</p> */}
                                 <button className="btn btn-primary" onClick={() => this.navigateToGame('other2')}>View Project</button>
                             </div>
