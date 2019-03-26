@@ -27,30 +27,22 @@ export default class Other2 extends Component {
           <div className="game-breadcrumb">
             <Link className="breadcrumb-item" to="/">Home</Link>
           </div>
+          <div className="heading">
+            <h2>Rope Physics</h2>
+          </div>
           <div className="row">
             <div className="col-6">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
+              <h2>Rope Simulation With Verlet Integration.</h2>
+              <p>Reference: This implementation is mostly based on <a href="http://web.archive.org/web/20080410171619/http://www.teknikus.dk/tj/gdc2001.htm">Advanced Character Physics </a> by Thomas Jakobsen.</p>
+              <ul>
+                <li>Particle system based approach to simulate rope.</li>
+                <li>Uses Verlet Integration to calculate the position of next particle by storing current and previous position instead of doing it by storing each particle position and velocity.</li>
+                <li>Same principles can be extended to create cloth physics and ragdolls.</li>
+              </ul>
             </div>
             <div className="col-6">
               <div className="gallery">
-                <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
+              <img id="comp-jto8amfyimgimage" alt="ropegif.gif" data-type="image" src="https://static.wixstatic.com/media/1b3a09_f253234b7e4248fcb5ebe07fd73a45cd~mv2.gif" />
               </div>
             </div>
           </div>

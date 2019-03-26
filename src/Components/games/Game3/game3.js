@@ -27,31 +27,43 @@ export default class Game3 extends Component {
           <div className="game-breadcrumb">
             <Link className="breadcrumb-item" to="/">Home</Link>
           </div>
+          <div className="heading">
+            <h2>The Blades Of Time</h2>
+          </div>
           <div className="row">
             <div className="col-6">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
+              <h2>About</h2>
+              <p>Blades of Time is an action adventure game inspired by games such as Prince of Persia and Braid</p>
+              <h2>Details</h2>
+              <ul>
+                <li>Made in Unity with C#.</li>
+                <li>Playable with Keyboard/Mouse or Controller.</li>
+              </ul>
+              <h2>Implemented Mechanics</h2>
+              <ul>
+                <li>3d Player and Camera Controller.</li>
+                <li>Rewind Time mechanic to fix mistakes or solve puzzles.</li>
+                <li>Time can be played at any speed and can be added to any game object, music also responds to time rewinding.</li>
+                <li>Wall climb system that allows to hang on to specific ledges to climb and traverse level.</li>
+                <li>Particle system used to create portals.</li>
+              </ul>
             </div>
             <div className="col-6">
               <div className="gallery">
                 <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} showNav={false} showBullets={true} lazyLoad={true} />
               </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <h2>External Assets Used</h2>
+              <p>All external assets used in this game that are listed below are freely available for use in projects.</p>
+              <ul>
+                <li>Character models and all animations are taken from <a href="https://www.mixamo.com/">Mixamo.</a></li>
+                <li>Traps models taken from <a href="https://assetstore.unity.com/packages/3d/environments/dungeons/dungeon-traps-50655">Dungeon Traps</a> package.</li>
+                <li>Skybox taken from <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633">Skybox</a> Series.</li>
+                <li>Tomb/Temple models taken from <a href="https://assetstore.unity.com/packages/3d/environments/fantasy/make-your-fantasy-game-lite-8312">Fantasy Game Lite</a> package.</li>
+              </ul>
             </div>
           </div>
         </div>
