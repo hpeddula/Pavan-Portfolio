@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import { Link } from 'react-router-dom';
 export default class Other2 extends Component {
   componentDidMount() {
-    document.title = "Other2";
+    document.title = "Rope Physics";
   }
   render() {
     const images = [
